@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,31 +17,265 @@
       href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'B612', sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: #fff;
+        margin: 50px;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+      }
+
+      .top {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background: linear-gradient(45deg, #231fbf, #69175f);
+        padding: 50px;
+      }
+
+      h2 {
+        font-size: 3em;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 0.7em;
+        letter-spacing: 0.1em;
+      }
+
+      h2 span {
+        font-size: 0.4em;
+        font-weight: 300;
+      }
+
+      .circular--portrait {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .circular--portrait img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* .img-bx {
+  width: 190px;
+  height: 250px;
+}
+
+.img-bx img {
+  width: 100%;
+  height: 100%;
+} */
+
+      .group {
+        position: relative;
+        display: grid;
+        gap: 50px;
+        width: 100%;
+        grid-template-columns: 2fr 3fr;
+        margin-top: 20px;
+      }
+
+      .group .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .group p {
+        color: #fff;
+        font-size: 1.05em;
+      }
+
+      .bottom {
+        position: relative;
+        display: grid;
+        margin: 50px 50px 0;
+        gap: 50px;
+        grid-template-columns: 2fr 3fr;
+      }
+
+      h4 {
+        font-size: 1.1em;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        letter-spacing: 0.25em;
+        color: #fff;
+        background: #231fbf;
+        font-weight: 600;
+        padding: 0 15px;
+        display: inline-flex;
+        border-radius: 5px;
+      }
+
+      .contact-info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .contact-info li {
+        display: flex;
+        gap: 10px;
+      }
+
+      .contact-info li .icon {
+        color: #231fbf;
+      }
+      .contact-info li .text {
+        color: #555;
+      }
+      .contact-info li a .text {
+        color: #3498db;
+      }
+
+      .skills {
+        margin: 20px 0;
+        display: grid;
+        row-gap: 30px;
+      }
+
+      .skills-line {
+        display: flex;
+        gap: 7px;
+      }
+
+      .skills .description {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2980b9;
+      }
+
+      .skills p {
+        margin-top: 5px;
+      }
+
+      .languages {
+        margin: 20px 0;
+        color: #333;
+      }
+
+      .right-side h4 {
+        margin-top: -10px;
+      }
+
+      .edu-group {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .edu-group-bx {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+
+      .edu-group-bx p:nth-child(1) {
+        font-weight: 500;
+      }
+
+      .edu-group-bx b {
+        font-weight: 500;
+        color: #231fbf;
+      }
+
+      .hobbies {
+        padding: 0 50px 50px;
+      }
+
+      .hobbies ul {
+        display: flex;
+        margin-top: 30px;
+        gap: 20px;
+        justify-content: space-between;
+      }
+
+      .hobbies ul li {
+        color: #333;
+        width: calc(100% / 5);
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: #f3f3f3;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .hobbies ul li:hover {
+        background-color: #231fbf;
+        color: #fff;
+      }
+
+      .hobbies ul li i {
+        font-size: 2em;
+      }
+    </style>
     <title>CV</title>
   </head>
   <body>
     <div class="container">
       <div class="top">
-        <h2>Maksim Kisialiou <br /><span>Web Developer</span></h2>
+        <h2>Максим Киселёв <br /><span>Web Developer</span></h2>
         <div class="group">
           <div class="left-side">
-            <div class="img-bx">
-              <img src="img.png" alt="person" />
+            <div class="img-bx circular--portrait">
+              <img src="./img.png" alt="person" />
             </div>
           </div>
           <div class="right-side">
-            <p>
-              I'm an enthusiastic and detail-oriented Frontend Software Engineer
+            <!-- <p>I'm an enthusiastic and detail-oriented Frontend Software Engineer
               seeking an entry-level position with Company to use my skills in
               coding, troubleshooting complex problems, and assisting in the
-              timely completion of projects.
+              timely completion of projects.</p> -->
+            <p>
+              Я увлеченный и внимательный к деталям Front End / Back End
+              инженер-программист. Ищу должность начального уровня в компании,
+              чтобы использовать свои навыки в кодировании, устранение сложных
+              проблем и помощь в своевременном завершение проектов.
             </p>
           </div>
         </div>
       </div>
       <div class="bottom">
         <div class="left-side">
-          <h4>Contacts</h4>
+          <h4>Контакты</h4>
           <ul class="contact-info">
             <li>
               <span class="icon"><i class="fa-solid fa-phone"></i></span>
@@ -59,14 +293,14 @@
             </li>
             <li>
               <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
-              <a href="https://www.linkedin.com/in/maksim-kisialiou-b87865241/"
+              <a href="https://www.linkedin.com/in/maksim-kisialiou/"
                 ><span class="text">linkedin</span></a
               >
             </li>
             <li>
               <span class="icon"><i class="fa-brands fa-github"></i></span>
               <a href="https://github.com/conservativ007/conservativ007"
-                ><span class="text">github</span></a
+                ><span class="text">github.com</span></a
               >
             </li>
             <li>
@@ -81,54 +315,64 @@
             </li>
           </ul>
 
-          <h4>Skills</h4>
+          <h4>Навыки</h4>
           <div class="skills">
-            <div class="skill-box" style="--i: 80%">
-              <p>HTML</p>
-              <div class="value"></div>
+            <div class="frontend">
+              <div class="description">Front End</div>
+              <div class="skills-line">
+                <p>HTML5,</p>
+                <p>CSS3/SASS,</p>
+                <p>Figma</p>
+              </div>
+              <div class="skills-line">
+                <p>JavaScript,</p>
+                <p>ReactJS/Redux</p>
+              </div>
             </div>
-            <div class="skill-box" style="--i: 80%">
-              <p>CSS3/SASS</p>
-              <div class="value"></div>
-            </div>
-            <div class="skill-box" style="--i: 80%">
-              <p>ReactJS</p>
-              <div class="value"></div>
-            </div>
-            <div class="skill-box" style="--i: 60%">
+
+            <div class="backend">
+              <div class="description">Back End</div>
               <p>NodeJS/NestJS</p>
-              <div class="value"></div>
+              <p>TypeScript</p>
             </div>
-            <div class="skill-box" style="--i: 65%">
-              <p>Typescript</p>
-              <div class="value"></div>
-            </div>
-            <div class="skill-box" style="--i: 45%">
+
+            <div class="data-bases">
+              <div class="description">Data bases</div>
               <p>Postgres</p>
-              <div class="value"></div>
             </div>
-            <div class="skill-box" style="--i: 50%">
-              <p>Figma</p>
-              <div class="value"></div>
+
+            <div class="devops">
+              <div class="description">DevOps</div>
+              <div class="skills-line">
+                <p>Git,</p>
+                <p>Docker</p>
+              </div>
+
+              <p>Postman/Insomnia</p>
             </div>
-            <div class="skill-box" style="--i: 50%">
-              <p>English B1</p>
-              <div class="value"></div>
+
+            <div class="tests">
+              <div class="description">Tests</div>
+              <div class="skills-line">
+                <p>Jest</p>
+              </div>
             </div>
-            <div class="skill-box" style="--i: 50%">
-              <p>Tests</p>
-              <div class="value"></div>
-            </div>
+          </div>
+
+          <h4>языки</h4>
+          <div class="languages">
+            <p>English B1</p>
           </div>
         </div>
         <div class="right-side">
-          <h4>Education</h4>
+          <h4>Курсы</h4>
           <div class="edu-group">
             <div class="edu-group-bx">
               <p>2019-2023</p>
               <div class="value">
-                <b>Self-study</b>
-                <p>Started learning web developement</p>
+                <b>Самостоятельное изучение</b>
+                <!-- <p>Started learning web developement</p> -->
+                <p>Начал изучать веб разработку</p>
               </div>
             </div>
             <div class="edu-group-bx">
@@ -136,15 +380,15 @@
               <div class="value">
                 <b>RS School</b>
                 <p>
-                  I successfully graduated from RS School in 2021, I have
+                  Я успешно закончил RS School в 2021 году, имею сертификаты
                   <a href="https://app.rs.school/certificate/q8gv8p3w"
                     >JavaScript</a
                   >
-                  and
+                  и
                   <a href="https://app.rs.school/certificate/bedir6l9">React</a>
-                  certificates, I have experience in team development within rs
-                  school, after graduation I began to study English and
-                  consolidate my knowledge of React JS development.
+                  имею опыт командной разработки в рамках rs school, после
+                  окончания школы начал изучать английский язык и закреплять
+                  свои знания по React JS разработке.
                 </p>
               </div>
             </div>
@@ -152,23 +396,29 @@
               <p>2023-2023</p>
               <div class="value">
                 <b>RS School</b>
-                <p>
+                <p>В 2023 году успешно закончил курс Rs School NodeJS.</p>
+                <!-- <p>
                   In 2023 completed Rs School NodeJS course. After that I wrote
                   two server applications.
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
-          <h4>Work Experience</h4>
+          <h4>Опыт работы</h4>
+          <!-- <h4>Work Experience</h4> -->
           <div class="edu-group">
             <div class="edu-group-bx">
               <p>2019-2023</p>
               <div class="value">
-                <b>Project development</b>
+                <b>Веб разработка</b>
                 <p>
+                  Разработал два серверных приложения и более восьми Front End
+                  приложений.
+                </p>
+                <!-- <p>
                   I made two backend applications and eight frontend
                   applications.
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
@@ -180,22 +430,6 @@
            <li>
             <i class="fa-solid fa-music"></i>
             <p>Music</p>
-          </li>
-          <li>
-            <i class="fa-solid fa-camera"></i>
-            <p>Photography</p>
-          
-          <li>
-            <i class="fa-solid fa-gamepad"></i>
-            <p>Gaming</p>
-          </li>
-          
-            <i class="fa-solid fa-palette"></i>
-            <p>Painting</p>
-          </li> 
-          <li>
-            <i class="fa-solid fa-book"></i>
-            <p>Reading</p>
           </li>
         </ul>
       </div> -->
